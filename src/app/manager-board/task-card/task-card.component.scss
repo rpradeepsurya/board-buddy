@@ -1,13 +1,20 @@
-.card-container {
+.container-card {
   margin-bottom: 8px;
   transition: all 0.4s;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.mat-card-title {
+mat-card {
+  padding: 16px;
+}
+
+.title {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 400 !important;
+  padding: 2px;
 }
 
 .content {
@@ -17,6 +24,7 @@
 
 p {
   color: rgb(80, 156, 237);
+  margin-bottom: 0;
 }
 
 .warn {

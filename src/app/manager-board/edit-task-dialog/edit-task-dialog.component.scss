@@ -1,13 +1,21 @@
 .dialog-container {
   position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-.mat-dialog-content {
+.dialog-box {
   display: flex;
   flex-direction: column;
 }
 
+input, textarea {
+  background-color: inherit;
+}
+
 .btn-close {
   left: 90%;
+  background-color: transparent;
+  color: #000;
 }
 
 .modal-buttons {

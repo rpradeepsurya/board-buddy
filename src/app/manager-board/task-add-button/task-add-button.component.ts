@@ -17,7 +17,7 @@ export class TaskAddButtonComponent implements OnInit {
   @Input() tasks!: Task[]
 
   showAddNewTaskInput = false;  // to display the form only when add a task button is clicked
-  taskTitleFormControl = new FormControl("", Validators.required);
+  taskTitleFormControl:any = new FormControl("", Validators.required);
 
   constructor(
     public dialog: MatDialog, private store: Store<AppState>,

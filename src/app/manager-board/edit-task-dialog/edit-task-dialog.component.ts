@@ -22,8 +22,8 @@ export class EditTaskDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: {
       colId: string,
       taskId: string,
-      taskTitle: string,
-      taskDescription: string,
+      taskTitle: any,
+      taskDescription: any,
     }) {
   }
 
