@@ -1,5 +1,5 @@
 
-# Trello Clone
+# Board Buddy
 
 A dynamic board-management web application inspired by Trello's core functionalities. Built using Angular and state managed with NgRx.
 
