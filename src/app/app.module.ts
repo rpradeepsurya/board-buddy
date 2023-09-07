@@ -7,6 +7,18 @@ import { localStorageSync } from 'ngrx-store-localstorage';
 import { reducers } from './ngrx-store/board-column.reducer';
 import { AppState } from './ngrx-store/board-column.state';
 import { ManagerBoardModule } from './manager-board/manager-board.module';
+import { AppRoutingModule } from '../app/app.routing.module';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+
 
 export function localStorageSyncReducer(reducer: ActionReducer<any>): ActionReducer<any> {
   return localStorageSync({ keys: ['board'], rehydrate: true })(reducer);
@@ -29,6 +41,17 @@ export const reducer: ActionReducerMap<AppState, any> = {
     ManagerBoardModule,
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
 
   ],
   providers: [],

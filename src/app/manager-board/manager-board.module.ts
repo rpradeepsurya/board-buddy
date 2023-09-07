@@ -7,6 +7,8 @@ import { TaskAddButtonComponent } from './task-add-button/task-add-button.compon
 import { TaskCardComponent } from './task-card/task-card.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -14,10 +16,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -32,17 +33,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserModule, 
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    DragDropModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    ReactiveFormsModule,
-    DragDropModule,
-    FormsModule,
     MatDialogModule,
-
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
   ],
 
   exports: [BoardComponent]
