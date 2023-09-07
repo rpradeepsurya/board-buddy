@@ -4,6 +4,13 @@
   width: 100%;
   justify-content: center;
   margin-top:14px;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .column {
