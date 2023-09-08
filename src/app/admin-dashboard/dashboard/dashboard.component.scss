@@ -1,16 +1,14 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #e2dada;
-    border: 1px solid #000;
-
-    p {
-        color:chocolate;
-        font-size: 1.5rem;
+.stats-cards {
+    padding: 1.2 rem;
+    .mat-card {
+      overflow: hidden;
     }
+  }
+  
+  table {
+    width: 100%;
+  }
+.container {
+    background-color: #fff;
+    
 }
