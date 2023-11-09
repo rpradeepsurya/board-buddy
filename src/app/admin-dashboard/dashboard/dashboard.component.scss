@@ -12,3 +12,34 @@
     background-color: #fff;
     
 }
+
+.stats-cards {
+  padding: 1.2rem;
+}
+
+
+.mat-card {
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  max-width: 100%; /* Prevents the card from exceeding the width of its container */
+  margin: 0; /* Resets any default margin */
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .stats-cards {
+      padding: 0;
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.container {
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
